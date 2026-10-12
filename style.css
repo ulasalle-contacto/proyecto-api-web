@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #202632;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    background-color: #313a49;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #53ffaa;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#numero-consejo {
+    color: #53ffaa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#texto-consejo {
+    color: #cee3e9;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+/* Diseño del botón para nuevos consejos */
+
+#boton-consejo {
+    background-color: #53ffaa;
+    color: #202632;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+
+#boton-consejo:hover {
+    background-color: #40e89a;
+    box-shadow: 0 0 25px #53ffaa;
+    transform: scale(1.05);
+}
+
+/* Efecto al presionar el botón */
+
+#boton-consejo:active {
+    transform: scale(0.95);
+}
+
+/* Botón desactivado durante la consulta */
+
+#boton-consejo:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+/* Diseño adaptable para celulares */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    main {
+        padding: 30px 20px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #numero-consejo {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    #texto-consejo {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    #boton-consejo {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
